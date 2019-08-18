@@ -35,7 +35,7 @@ contract VoteDemo{
         if(voters[addr].vote){
             return;  // This person has voted and can return
         }
-
+   // This person has voted before and should not be added to this mapping.
         voters[addr].addr = addr;
         voters[addr].vote = false;
         voters[addr].amount = 1;
